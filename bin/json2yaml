@@ -1,0 +1,25 @@
+#!/usr/bin/env perl6 
+
+#--------------------------#
+# 1. take a file 					 #
+# 2. validate JSON				 #
+# 3. print YAML to stdout  #
+#--------------------------#
+
+use JSON::Tiny;
+use YAML;
+
+sub MAIN (Str:D $filepath) {
+				
+				JSON::Tiny::Grammar.parsefile($filepath);
+
+				CATCH {
+					"Cannot parse JSON: $_";
+					return 1
+				}
+
+				my $json = slurp($filepath).lines;
+				say dump(from-json($json))
+
+}
+

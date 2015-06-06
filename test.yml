@@ -1,0 +1,10 @@
+---
+author: Dmitry Yaskolko
+depends: []
+description: The great new App::json2yaml
+name: App::json2yaml
+provides:
+  json2yaml: App-json2yaml/bin/json2yaml
+source-url:
+version: 0.01
+

@@ -1,0 +1,12 @@
+{
+    "name" : "App::json2yaml",
+    "version" : "0.01",
+    "description" : "The great new App::json2yaml",
+    "author" : "Dmitry Yaskolko",
+    "source-url" : "",
+    "depends" : [ ],
+    "provides" : {
+      "json2yaml" : "App-json2yaml/bin/json2yaml"
+    }
+}
+
